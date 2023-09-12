@@ -1,13 +1,13 @@
 {
-    "version": "17.0.8-b1000.22",
+    "version": "17.0.8.1-b1059.3",
     "homepage": "https://github.com/JetBrains/JetBrainsRuntime",
     "description": "A fork of OpenJDK that includes a number enhancements in font rendering, HiDPI support, ligatures, performance improvements, and bugfixes. These are mainly for running IntelliJ Platform-based products",
     "license": "GPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.8-windows-x64-b1000.22.tar.gz",
-            "hash": "sha512:d0505beb51f1a3edeebadc912f6ab8fdcdf9293ac07c97bfef329e6edd4f2c4e6df438bd905a32a036c8e1184689a52961f758f73abe22398ebb773f5625517e",
-            "extract_dir": "jbr_jcef-17.0.8-windows-x64-b1000.22"
+            "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.8.1-windows-x64-b1059.3.tar.gz",
+            "hash": "sha512:ce4618e783488f74f0c376c7de926e6e9148a186a70c94b13b1087af8d9bc57e18b4eee867805b3c4618fba50e6dbbeb8f84dfef29f876b54ec8a6ef4916befb",
+            "extract_dir": "jbr_jcef-17.0.8.1-windows-x64-b1059.3"
         }
     },
     "env_set": {
