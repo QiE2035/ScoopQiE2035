@@ -9,6 +9,9 @@
         "regex": "download/(?<url>(AdobeGenP-([\\d\\.]+)).*)",
         "replace": "$2"
     },
+    "installer": {
+        "script": "mv $dir/*/*/AdobeGenP.exe $dir/"
+    },
     "hash": "cfc2a0f30e3df6f7660c22330652e1a833d7fe9f0191a8873ded11dec79d4b11",
     "shortcuts": [
         [
