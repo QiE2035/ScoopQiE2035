@@ -1,0 +1,22 @@
+{
+    "url": "https://github.com/wangzhenjjcn/AdobeGenp/releases/download/AdobeGenP-3.3/Adobe-GenP-3.3_beta.zip",
+    "license": "GPL-3.0",
+    "homepage": "https://github.com/wangzhenjjcn/AdobeGenp",
+    "version": "3.3",
+    "checkver": {
+        "url": "https://api.github.com/repos/wangzhenjjcn/AdobeGenp/releases/latest",
+        "jsonpath": "$.assets[0].browser_download_url",
+        "regex": "download/(?<url>(AdobeGenP-([\\d\\.]+)).*)",
+        "replace": "$2"
+    },
+    "hash": "cfc2a0f30e3df6f7660c22330652e1a833d7fe9f0191a8873ded11dec79d4b11",
+    "shortcuts": [
+        [
+            "AdobeGenP.exe",
+            "AdobeGenP"
+        ]
+    ],
+    "autoupdate": {
+        "url": "https://github.com/wangzhenjjcn/AdobeGenp/releases/download/$matchUrl"
+    }
+}
