@@ -1,0 +1,28 @@
+{
+    "version": "6.2.1",
+    "description": "Scoop Super Search, instantaneous results, UTF-8 and regex compatible. The fastest search engine for Scoop.",
+    "homepage": "https://github.com/QiE2035/ss",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "Type ss -h before using it for the first time to learn how it works.",
+        "Visit https://github.com/okibcn/ss for more information."
+    ],
+    "url": "https://github.com/QiE2035/ss/releases/download/6.2.1/ss-v6.2.1.7z",
+    "hash": "4230c0fd5a0792e218c66836be3347fa9fe8564967cb3dfc8f7a1c02550d358d",
+    "depends": [
+        "7zip",
+        "aria2"
+    ],
+    "bin": "ss.ps1",
+    "pre_install": [
+        "Move-Item \"$dir/ss/*\" $dir -Force",
+        "Remove-Item \"$dir/ss\" -Recurse -Force"
+    ],
+    "checkver": {
+        "github": "https://api.github.com/repos/QiE2035/ss",
+        "regex": "v([\\d\\.\\-]+)\\.7z"
+    },
+    "autoupdate": {
+        "url": "https://github.com/QiE2035/ss/releases/download/$version/ss-v$version.7z"
+    }
+}
