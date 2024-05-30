@@ -1,28 +1,8 @@
 {
-    "url": "https://github.com/wangzhenjjcn/AdobeGenp/releases/download/AdobeGenP-3.4.12/Adobe.GenP.3.4.12.zip",
+    "url": "https://github.com/wangzhenjjcn/AdobeGenp/releases/download/AdobeGenp-3.4.13.4/AdobeGenP-3.4.13.4.zip",
     "license": "GPL-3.0",
     "homepage": "https://github.com/wangzhenjjcn/AdobeGenp",
-    "version": "3.4.12",
-    "checkver": {
-        "url": "https://api.github.com/repos/wangzhenjjcn/AdobeGenp/releases/latest",
-        "jsonpath": "$.assets[0].browser_download_url",
-        "regex": "download/(?<url>(AdobeGenP-([\\d\\.]+)).*)",
-        "replace": "$2"
-    },
-    "installer": {
-        "script": [
-            "mv $dir/*/*/AdobeGenP.exe $dir/",
-            "Rename-Item $dir/AdobeGenP*.exe $dir/AdobeGenP.exe"
-        ]
-    },
-    "hash": "c79dd537ec7724571f74ef2724257061669d71d7ae2046dc993763d622c0fb28",
-    "shortcuts": [
-        [
-            "AdobeGenP.exe",
-            "AdobeGenP"
-        ]
-    ],
-    "autoupdate": {
-        "url": "https://github.com/wangzhenjjcn/AdobeGenp/releases/download/$matchUrl"
-    }
+    "version": "3.4.13.4",
+    "hash": "d1f9810ed33a3513fb384bd8642f783893976cd8a424e36f830ff274ee805069",
+    "shortcuts": [["AdobeGenP-3.4.13.4.exe", "AdobeGenp"]]
 }
